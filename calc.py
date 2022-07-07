@@ -9,7 +9,7 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # Define an event to close the window
 def close_win(e):
-   win.destroy()
+    win.destroy()
 
 def button_click(number):
     current = e.get()
