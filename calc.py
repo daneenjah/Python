@@ -1,4 +1,7 @@
-from tkinter import *
+from tkinter import Tk
+from tkinter import END
+from tkinter import Button
+from tkinter import Entry
 
 win = Tk()
 win.title("Calc")
@@ -132,14 +135,14 @@ button_8 = Button(win, text="8", padx=40, pady=20, command=lambda: button_click(
 button_9 = Button(win, text="9", padx=40, pady=20, command=lambda: button_click(9))
 button_0 = Button(win, text="0", padx=40, pady=20, command=lambda: button_click(0))
 
-button_add = Button(win, text="+", padx=39, pady=20, command=button_add)
-button_minus = Button(win, text="-", padx=42, pady=20, command=button_minus)
+button_add1 = Button(win, text="+", padx=39, pady=20, command=button_add)
+button_minus1 = Button(win, text="-", padx=42, pady=20, command=button_minus)
 
-button_multiply = Button(win, text="*", padx=41, pady=20, command=button_multiply)
-button_divide = Button(win, text="/", padx=42, pady=20, command=button_divide)
+button_multiply1 = Button(win, text="*", padx=41, pady=20, command=button_multiply)
+button_divide1 = Button(win, text="/", padx=42, pady=20, command=button_divide)
 
-button_equal = Button(win, text="=", padx=143, pady=20, command=button_equal)
-button_clear = Button(win, text="Clr", padx=36, pady=20, command=button_clear)
+button_equal1 = Button(win, text="=", padx=143, pady=20, command=button_equal)
+button_clear1 = Button(win, text="Clr", padx=36, pady=20, command=button_clear)
 
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
@@ -155,14 +158,14 @@ button_9.grid(row=1, column=2)
 
 button_0.grid(row=5, column=0)
 
-button_add.grid(row=5, column=1)
-button_minus.grid(row=5, column=2)
+button_add1.grid(row=5, column=1)
+button_minus1.grid(row=5, column=2)
 
-button_equal.grid(row=7, column=0, columnspan=3)
-button_clear.grid(row=6, column=2, columnspan=2)
+button_equal1.grid(row=7, column=0, columnspan=3)
+button_clear1.grid(row=6, column=2, columnspan=2)
 
-button_multiply.grid(row=6, column=1)
-button_divide.grid(row=6, column=0)
+button_multiply1.grid(row=6, column=1)
+button_divide1.grid(row=6, column=0)
 
 # Bind the C key with the callback function
 win.bind('<c>', lambda e: close_win(e))
